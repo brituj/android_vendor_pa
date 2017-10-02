@@ -95,6 +95,9 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
     vendor/pa/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept
 
+# Add modded GCam
+PRODUCT_PACKAGES += GCam
+
 # Build Chromium for Snapdragon (PA Browser)
 PRODUCT_PACKAGES += PABrowser
 
@@ -104,7 +107,7 @@ PRODUCT_PACKAGES += ParanoidCamera
 endif
 
 # Build ParanoidHub
-PRODUCT_PACKAGES += ParanoidHub
+#PRODUCT_PACKAGES += ParanoidHub
 
 # Build ParanoidPapers
 PRODUCT_PACKAGES += ParanoidPapers
