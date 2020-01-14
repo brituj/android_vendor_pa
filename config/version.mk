@@ -34,7 +34,7 @@ ifndef PA_VERSION_CODE
   # The version code is the upgradable portion during the cycle of
   # every major Android release. Each version code upgrade indicates
   # our own major release during each lifecycle.
-  PA_VERSION_CODE := 1
+  PA_VERSION_CODE := -
 endif
 
 # Determines the variant of the build.
@@ -44,7 +44,7 @@ endif
 # BETA: Public builds for testing purposes
 # Public releases will not include a TAG
 ifndef PA_BUILDTYPE
-  PA_BUILD_VARIANT := DEV
+  PA_BUILD_VARIANT := Extended
 else
   ifeq ($(PA_BUILDTYPE), ALPHA)
     PA_BUILD_VARIANT := Alpha
